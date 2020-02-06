@@ -5,7 +5,7 @@ Convert any web page into mobile app. To download the app,  [simply click add to
 
 ----------
 
-##### **For Developers**
+### **For Developers**
 
 Simply paste the following code in your header to make your website a mobile app  [(Progressive Web App).](https://blog.mozilla.org/firefox/progressive-web-apps-whats-big-deal/)
 
@@ -13,7 +13,7 @@ Simply paste the following code in your header to make your website a mobile app
 
 ----------
 
-##### **For Users looking to convert webpages into mobile app**
+### **For Users looking to convert webpages into mobile app**
 
 https://realmichaelye.github.io/ToApp/ Includes a mobile app converter for any url.
 
