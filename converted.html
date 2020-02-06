@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://realmichaelye.github.io/ToApp/toapp.js"></script>
+</head>
+<body>
+
+  <iframe id="frame" is="x-frame-bypass" _ngcontent-c2 allowfullscreen frameborder="0" height="100%" width="100%" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"
+  src="">
+      Your browser doesn't support iframes
+</iframe>
+</body>
+<script>
+  var urlPre = window.location.search.substr(1).substring(4)
+  url = rawurldecode(urlPre)
+
+  function rawurldecode( str ) {  
+    var histogram = {};  
+    var ret = str.toString();   
+  
+    var replacer = function(search, replace, str) {  
+        var tmp_arr = [];  
+        tmp_arr = str.split(search);  
+        return tmp_arr.join(replace);  
+    };  
+  
+    // The histogram is identical to the one in urlencode.  
+    histogram["'"]   = '%27';  
+    histogram['(']   = '%28';  
+    histogram[')']   = '%29';  
+    histogram['*']   = '%2A';  
+    histogram['~']   = '%7E';  
+    histogram['!']   = '%21';  
+  
+    for (replace in histogram) {  
+        search = histogram[replace]; // Switch order when decoding  
+        ret = replacer(search, replace, ret) // Custom replace. No regexing  
+    }  
+  
+    // End with decodeURIComponent, which most resembles PHP's encoding functions  
+    ret = decodeURIComponent(ret);  
+  
+    return ret;  
+  }  
+
+  $("#frame").attr("src",url);
+</script>
+</html>
