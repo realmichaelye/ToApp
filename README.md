@@ -15,9 +15,7 @@ Simply paste the following code in your header to make your website a mobile app
 
 ##### **For Users looking to convert webpages into mobile app**
 
-**Note:**  Most popular websites block this hack on their landing pages. Try sub pages instead, e.g. instead of medium.com, try https://medium.com/@realmichaelye
-
-**URL (include https):**
+https://realmichaelye.github.io/ToApp/ Includes a mobile app converter for any url.
 
 ----------
 
